@@ -13,6 +13,8 @@ coordinated breaking change across all loaders.
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-05-07
+
 Initial public release. Per-value AES-256-GCM sealing for dotenv files,
 plus decrypt-only loaders for JS, Deno, Python, and Go.
 
@@ -129,4 +131,5 @@ plus decrypt-only loaders for JS, Deno, Python, and Go.
   via `scripts/cross-language-roundtrip.mjs` with auto-skip for
   toolchains not on `PATH`.
 
-[Unreleased]: https://github.com/clbrge/dotseal/tree/main
+[Unreleased]: https://github.com/clbrge/dotseal/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/clbrge/dotseal/releases/tag/v0.1.0
