@@ -23,3 +23,10 @@ import { decryptValue, decryptEnv, parseEnv } from "jsr:@dotseal/env";
 - Decrypt-only. Sealing is done via the `dotseal` CLI (Rust crate).
 - Plaintext memory zeroize is not available in Deno's runtime — see the
   per-language divergence in `FORMAT.md`.
+
+## License
+
+Dual-licensed under MIT or Apache-2.0 at your option — see the included
+`LICENSE-MIT` and `LICENSE-APACHE` files. The JSR metadata field reports
+only `MIT` because JSR accepts a single SPDX identifier per package; the
+project's licensing is unchanged.

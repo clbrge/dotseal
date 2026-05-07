@@ -1,10 +1,10 @@
 {
   "name": "@dotseal/env",
   "version": "0.1.0",
-  "license": "MIT OR Apache-2.0",
+  "license": "MIT",
   "exports": "./mod.ts",
   "publish": {
-    "include": ["mod.ts", "README.md"]
+    "include": ["mod.ts", "README.md", "LICENSE-MIT", "LICENSE-APACHE"]
   },
   "tasks": {
     "test": "deno test --allow-read=../../test-vectors",
