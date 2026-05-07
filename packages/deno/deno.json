@@ -1,0 +1,19 @@
+{
+  "name": "@dotseal/env",
+  "version": "0.1.0",
+  "license": "MIT OR Apache-2.0",
+  "exports": "./mod.ts",
+  "publish": {
+    "include": ["mod.ts", "README.md"]
+  },
+  "tasks": {
+    "test": "deno test --allow-read=../../test-vectors",
+    "lint": "deno lint"
+  },
+  "lint": {
+    "include": ["mod.ts", "mod_test.ts"],
+    "rules": {
+      "tags": ["recommended"]
+    }
+  }
+}

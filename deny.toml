@@ -1,0 +1,50 @@
+# cargo-deny configuration for dotseal.
+# Run via: cargo deny check
+# See https://embarkstudios.github.io/cargo-deny/ for the schema.
+
+[graph]
+all-features = true
+
+[licenses]
+# Allow-list of OSI-approved licenses compatible with MIT OR Apache-2.0
+# distribution. Anything outside this set must be reviewed before it can
+# enter the dependency graph.
+allow = [
+    "Apache-2.0",
+    "Apache-2.0 WITH LLVM-exception",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "BSL-1.0",
+    "ISC",
+    "MIT",
+    "MIT-0",
+    "MPL-2.0",
+    "Unicode-3.0",
+    "Unicode-DFS-2016",
+    "Zlib",
+]
+confidence-threshold = 0.9
+
+[bans]
+# Surface (but don't fail on) duplicate major versions of the same crate.
+# Tracked separately as D-I2 in FINDINGS.md — will tighten to "deny" once
+# the RustCrypto stack lands rand_core 0.9 / getrandom 0.3 (see D-L3).
+multiple-versions = "warn"
+# Wildcard version requirements ("*") are forbidden — they bypass MSRV
+# guarantees and let upstream majors slip in unchecked.
+wildcards = "deny"
+deny = []
+
+[advisories]
+# Reject yanked crates and any open RUSTSEC vulnerability.
+yanked = "deny"
+unmaintained = "workspace"
+ignore = []
+
+[sources]
+# All deps must come from the official crates.io registry. No git or
+# local-path overrides without an explicit allow-list entry.
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+allow-git = []

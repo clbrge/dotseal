@@ -1,0 +1,154 @@
+{
+  "version": "v1",
+  "key": "AAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8",
+  "cases": [
+    {
+      "id": "production_secret",
+      "scope": "production",
+      "name": "API_SUPER_KEY",
+      "plaintext": "secret-value",
+      "nonce": "ICEiIyQlJicoKSor",
+      "sealed": "enc:v1:ICEiIyQlJicoKSoroV_FAgnsN3h7EDerj53e0Qpsr2lTDYsfbYmoIQ"
+    },
+    {
+      "id": "empty_plaintext",
+      "scope": "production",
+      "name": "EMPTY_VALUE",
+      "plaintext": "",
+      "nonce": "LC0uLzAxMjM0NTY3",
+      "sealed": "enc:v1:LC0uLzAxMjM0NTY3f8pdYB771OOvZc_-JOqz2w"
+    },
+    {
+      "id": "multibyte_utf8",
+      "scope": "production",
+      "name": "UNICODE_VALUE",
+      "plaintext": "héllo 🌍 Привет こんにちは",
+      "nonce": "ODk6Ozw9Pj9AQUJD",
+      "sealed": "enc:v1:ODk6Ozw9Pj9AQUJDFL8LHOSPpnN4mtFashcRwbSapqf2m-xRusm8xSSS1VpMbVgOTxuXifvEgEpd-zNtmAFLi-DB-SA"
+    },
+    {
+      "id": "default_scope",
+      "scope": "default",
+      "name": "DEFAULT_SECRET",
+      "plaintext": "default-secret",
+      "nonce": "REVGR0hJSktMTU5P",
+      "sealed": "enc:v1:REVGR0hJSktMTU5PrxKQ8Q4Q49pvrpZWvcaTWXsNZqVkICOEu84T_KSk"
+    },
+    {
+      "id": "very_long_value",
+      "scope": "production",
+      "name": "LONG_VALUE",
+      "plaintext": "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      "nonce": "UFFSU1RVVldYWVpb",
+      "sealed": "enc:v1:UFFSU1RVVldYWVpbohYER9Blj9Fkj1wHroXms9Mez9gWRKwVHLCBuZMk8BJh3rjuXxOlg1HjhPy25pyx4RpEKh4oZFqn_4VmzK1h9ABb7qm9xiFGGs6Fbf0iLyW3zK00wMMwW8hCLKN9dOlgl5Vo8W7JxxIvF1iQCQJrONZhIyfzeDJk3PWvH87z9OH-iLQsNGpaP_TnfyKvoX8wFko4nRv9k0hBwpKAzdIJmusK3XK0ve8DswN3Kw8OvrZbS-uFBJkC9fKxtzcHZNQ2qtKdyun2WdeOT4xoikpvKrWMPhoitsZD62hxME-oWPp-8Zqd4W4L8JCi5sw2ioWHwBIE0F_4TevwG8K2oM8Q_Olgk-Wo-jJdUfi1aqYZUGQ3GsCsiVTQ9JhZDs62KlwOD4N_63P7O1W8FP7lxczveQkayYnCApaetY1WmcGjI887x-Q-EgCT6EAQgmSBa5nF8ORba_c7w1dXExRWc6jbsHienn1VOGrBsKxb7qWyARVST3x7BqMhdwxJIltkzC_TpwZqHZaGx6DuBYgmw9ZBbEXuUQLRRAMnK3fXMsDIhpwMUNM2OVyws6DV9z1WSY12jd30d_Bhkz5ePRalgff2UMd7Clygju1ArXFI_Pd1RRZm7tqHlVS3RpUNuHQW10DZ4BSlI3yYDNHV-eneMBu1z6OnM70wvS21eRCYzMBbP0YH-TLCFklGJmPKTDBTUNerhbrU7e9Zxuv1ADQgxddetzQOwqswx795NDSSCzJbcYwefM3s0Ccb7wrWz-F-RU5kgbGiR7qLESMXKpnSg-OB0oP8p6I2fv-c4-Dy42emk1Z-_ETCYTNrWCaPwUU-KxOmcMZ_zo-63nl27YQS7J35meG5gSPgnGaM4HgXJ2TpcplPAonJHWm3SWQTeM75FsjW0uUBDhznSYYtpUYySg_NeOFDWFoQPVGDz4kFsLqMeVGHbzpSJns_mNxs9Siry-qiX7Zd3g4bGKaTB8LlpYdLd62W4DKXCXg_AqhHMfGHYSAM72KG4pITgg4GwaWxQra53qJcMBHQQO5S4fUvEFGPHqLphXOAEDvvldEirLaJlrM3VEIDbnG6PXlFfBMj5RsM_lGC-tOMGwtFHo0YzLuJCQ81M2x6i4dc7xm0N3oiX1xQ3orQ-boUL-gzffarWenzZRAMN1-0RasOA_IMQRh5xk1LVAZE-YNiNoR7AmOmlVS1d7b9RKStEBbS7dCUBj0_u-zbHKmGSmztAIagptHklcjwEF86UlpTCJHH9fjVrd0ZKzYcWoDKixmdreuMUwgH8mNBP4uqiji7anIQkmc4fwPwksRF16sTvaUUEDXN4aIbkuIRuQdvd3_2mJAxC4GaFQopUj4AlfPq386ZYLM3bdhiFIyR-KHIKaRktKcf8q4"
+    },
+    {
+      "id": "multiline_value",
+      "scope": "production",
+      "name": "MULTILINE_VALUE",
+      "plaintext": "line one\nline two\nline three",
+      "nonce": "XF1eX2BhYmNkZWZn",
+      "sealed": "enc:v1:XF1eX2BhYmNkZWZnBaqJLjJRyOcmW9lrjWaka6GLGgfRAkbNUda9dfsEEu3ynN_LbTelQufBLjI"
+    }
+  ],
+  "rejects": [
+    {
+      "id": "truncated_payload",
+      "scope": "production",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v1:ICEi",
+      "reason": "payload_too_short"
+    },
+    {
+      "id": "exactly_nonce_len_payload",
+      "scope": "production",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v1:ICEiIyQlJicoKSor",
+      "reason": "payload_too_short"
+    },
+    {
+      "id": "empty_payload",
+      "scope": "production",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v1:",
+      "reason": "payload_too_short"
+    },
+    {
+      "id": "swapped_name",
+      "scope": "production",
+      "name": "OTHER_KEY",
+      "sealed": "enc:v1:ICEiIyQlJicoKSoroV_FAgnsN3h7EDerj53e0Qpsr2lTDYsfbYmoIQ",
+      "reason": "auth_failed"
+    },
+    {
+      "id": "swapped_scope",
+      "scope": "development",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v1:ICEiIyQlJicoKSoroV_FAgnsN3h7EDerj53e0Qpsr2lTDYsfbYmoIQ",
+      "reason": "auth_failed"
+    },
+    {
+      "id": "nonce_bit_flip",
+      "scope": "production",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v1:ISEiIyQlJicoKSoroV_FAgnsN3h7EDerj53e0Qpsr2lTDYsfbYmoIQ",
+      "reason": "auth_failed"
+    },
+    {
+      "id": "ciphertext_bit_flip",
+      "scope": "production",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v1:ICEiIyQlJicoKSoroF_FAgnsN3h7EDerj53e0Qpsr2lTDYsfbYmoIQ",
+      "reason": "auth_failed"
+    },
+    {
+      "id": "tag_bit_flip",
+      "scope": "production",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v1:ICEiIyQlJicoKSoroV_FAgnsN3h7EDerj53e0Qpsr2lTDYsfbYmoIA",
+      "reason": "auth_failed"
+    },
+    {
+      "id": "version_downgrade_v0",
+      "scope": "production",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v0:ICEiIyQlJicoKSoroV_FAgnsN3h7EDerj53e0Qpsr2lTDYsfbYmoIQ",
+      "reason": "unsupported_version"
+    },
+    {
+      "id": "forward_version_v2",
+      "scope": "production",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v2:ICEiIyQlJicoKSoroV_FAgnsN3h7EDerj53e0Qpsr2lTDYsfbYmoIQ",
+      "reason": "unsupported_version"
+    },
+    {
+      "id": "non_base64url_payload",
+      "scope": "production",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v1:****invalid****",
+      "reason": "invalid_payload_encoding"
+    },
+    {
+      "id": "scope_with_newline",
+      "scope": "prod\nname=ADMIN",
+      "name": "API_SUPER_KEY",
+      "sealed": "enc:v1:ICEiIyQlJicoKSoroV_FAgnsN3h7EDerj53e0Qpsr2lTDYsfbYmoIQ",
+      "reason": "invalid_scope"
+    },
+    {
+      "id": "name_with_newline",
+      "scope": "production",
+      "name": "ADMIN\nname=API_SUPER_KEY",
+      "sealed": "enc:v1:ICEiIyQlJicoKSoroV_FAgnsN3h7EDerj53e0Qpsr2lTDYsfbYmoIQ",
+      "reason": "invalid_name"
+    },
+    {
+      "id": "invalid_utf8_plaintext",
+      "scope": "production",
+      "name": "BINARY_VALUE",
+      "sealed": "enc:v1:aGlqa2xtbm9wcXJz0R30E2YLXTiKpdMVm3jkrejLYw",
+      "reason": "invalid_utf8_plaintext"
+    }
+  ]
+}
